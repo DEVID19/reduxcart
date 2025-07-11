@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../app/cartSlice";
+import { addToCart, calculateTotal } from "../app/cartSlice";
 import toast from "react-hot-toast";
 
 const ProductCard = ({ product }) => {
@@ -13,7 +13,8 @@ const ProductCard = ({ product }) => {
       toast.error("Product is already in the Cart!");
     } else {
       toast.success("Product is added in Cart!");
-      dispatch(addToCart({ ...product, quantity: 1 }));
+        dispatch(addToCart({ ...product, quantity: 1 }));
+        dispatch(calculateTotal())
     }
   };
 
