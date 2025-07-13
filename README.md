@@ -121,4 +121,6 @@ This project is open-source and free to use under the [MIT License](LICENSE).
 
 ---
 
-> ⚠️ This is a **learning project**, created to practice Redux Toolkit and build a cart system from scratch using React.
+## 🌟 Star This Repo
+
+If you found these projects helpful or inspiring, please consider starring 🌟 the repo. It motivates continued learning and sharing!
